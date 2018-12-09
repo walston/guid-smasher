@@ -1,0 +1,19 @@
+{
+  "name": "guid-smasher",
+  "version": "1.0.0b",
+  "description": "Squash guids: 33% smaller & URL safe",
+  "keywords": [
+    "compression",
+    "url"
+  ],
+  "author": "",
+  "license": "ISC",
+  "main": "index.js",
+  "scripts": {
+    "test": "ava"
+  },
+  "devDependencies": {
+    "ava": "^0.25.0",
+    "uuid": "^3.3.2"
+  }
+}
