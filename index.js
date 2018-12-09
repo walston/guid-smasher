@@ -1,11 +1,12 @@
 const CODE = "0123456789abcdefghijklmnopqrstuvwxyzABCDEFGHIJKLMNOPQRSTUVWXYZ-_";
-const regex = /^[a-f0-9]{8}-[a-f0-9]{4}-[a-f0-9]{4}-[a-f0-9]{4}-[a-f0-9]{12}$/i;
+const regex = /^(?:.*::)?[a-f0-9]{8}-[a-f0-9]{4}-[a-f0-9]{4}-[a-f0-9]{4}-[a-f0-9]{12}$/i;
 
-module.exports = function Smasher(prefix) {
-  prefix = prefix || "";
-
+/**
+ * @return {{ smash: (guid: string) => string, unsmash: (cypher: string) => string }}
+ */
+module.exports = function Smasher() {
   return {
-    smash: function squash(guid) {
+    smash: function smash(guid) {
       if (!regex.test(guid)) {
         throw Error("Not a GUID");
       }
