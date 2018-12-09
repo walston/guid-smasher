@@ -1,14 +1,17 @@
 {
   "name": "guid-smasher",
-  "version": "1.0.0b",
+  "version": "1.0.2",
   "description": "Smash guids: 33% smaller & URL safe",
   "keywords": [
     "compression",
     "url"
   ],
-  "author": "",
+  "author": "Nathan Walston (https://github.com/walston)",
   "license": "ISC",
   "main": "index.js",
+  "engines": {
+    "node": ">=9"
+  },
   "scripts": {
     "test": "ava",
     "prepublish": "npm run test"
