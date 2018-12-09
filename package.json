@@ -1,7 +1,7 @@
 {
   "name": "guid-smasher",
   "version": "1.0.0b",
-  "description": "Squash guids: 33% smaller & URL safe",
+  "description": "Smash guids: 33% smaller & URL safe",
   "keywords": [
     "compression",
     "url"
@@ -10,7 +10,8 @@
   "license": "ISC",
   "main": "index.js",
   "scripts": {
-    "test": "ava"
+    "test": "ava",
+    "prepublish": "npm run test"
   },
   "devDependencies": {
     "ava": "^0.25.0",
