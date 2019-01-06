@@ -15,7 +15,7 @@ that's it. Nothing complicated about it.
 
 ## Errors
 
-We will throw an `Error("Not a GUID")` if the guid doesn't look poorly formatted.
+We will throw an `Error("Not a GUID")` if the guid looks poorly formatted.
 
 ```javascript
 Smasher.smash("Alec Baldwin"); // throws Error("Not a GUID")
