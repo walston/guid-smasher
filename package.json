@@ -1,6 +1,6 @@
 {
   "name": "guid-smasher",
-  "version": "1.0.3",
+  "version": "1.0.4",
   "description": "Smash guids: 33% smaller & URL safe",
   "keywords": [
     "compression",
